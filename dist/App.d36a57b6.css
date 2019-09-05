@@ -1,0 +1,19 @@
+html, body, #fk-man {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+img{
+  display: none;
+}
+
+#gameScreen{
+  border: 1px solid;
+}
+
+
+/*# sourceMappingURL=/App.d36a57b6.css.map */
