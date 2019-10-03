@@ -1,4 +1,4 @@
-export default class ImputHandler {
+export default class InputHandler {
     constructor(MarioMan) {
         document.addEventListener('keydown', event => {
             switch (event.keyCode) {

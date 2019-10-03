@@ -7,7 +7,7 @@ export default class Mushroom {
     constructor(game) {
         this.gameWidth = game.gameWidth;
         this.gameHeight = game.gameHeight;
-        this.myWidth = 20;
+        this.myWidth = 40;
         this.image = document.getElementById('mushroom');
         this.position = {
             x: getRandomInRange(this.myWidth, this.gameWidth - this.myWidth, 0),

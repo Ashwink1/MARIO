@@ -259,7 +259,7 @@ function () {
     this.maxSpeed = 2;
     this.hSpeed = 0;
     this.vSpeed = 0;
-    this.myWidth = 20;
+    this.myWidth = 40;
     this.position = {
       x: 0,
       y: 0
@@ -371,7 +371,7 @@ function () {
 
     this.gameWidth = game.gameWidth;
     this.gameHeight = game.gameHeight;
-    this.myWidth = 20;
+    this.myWidth = 40;
     this.image = document.getElementById('mushroom');
     this.position = {
       x: getRandomInRange(this.myWidth, this.gameWidth - this.myWidth, 0),
@@ -443,7 +443,7 @@ function () {
 
     this.gameWidth = game.gameWidth;
     this.gameHeight = game.gameHeight;
-    this.myWidth = 20;
+    this.myWidth = 40;
     this.image = document.getElementById('poison');
     this.position = {
       x: getRandomInRange(this.myWidth, this.gameWidth - this.myWidth, 0),
@@ -499,8 +499,8 @@ exports.default = void 0;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var ImputHandler = function ImputHandler(MarioMan) {
-  _classCallCheck(this, ImputHandler);
+var InputHandler = function InputHandler(MarioMan) {
+  _classCallCheck(this, InputHandler);
 
   document.addEventListener('keydown', function (event) {
     switch (event.keyCode) {
@@ -523,7 +523,7 @@ var ImputHandler = function ImputHandler(MarioMan) {
   });
 };
 
-exports.default = ImputHandler;
+exports.default = InputHandler;
 },{}],"controller/Game.js":[function(require,module,exports) {
 "use strict";
 
@@ -595,7 +595,7 @@ function () {
 exports.default = Game;
 },{"./Mario.js":"controller/Mario.js","./Mushroom.js":"controller/Mushroom.js","./Poision.js":"controller/Poision.js","../utils/InputHandler.js":"utils/InputHandler.js"}],"constants/index.js":[function(require,module,exports) {
 var GAME_WIDTH = 300;
-var GAME_HEIGHT = 100;
+var GAME_HEIGHT = 300;
 module.exports = {
   GAME_WIDTH: GAME_WIDTH,
   GAME_HEIGHT: GAME_HEIGHT
@@ -659,7 +659,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62476" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61955" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -8,7 +8,7 @@ export default class Mario {
         this.maxSpeed = 2;
         this.hSpeed = 0;
         this.vSpeed = 0;
-        this.myWidth = 20;
+        this.myWidth = 40;
 
         this.position = {
             x: 0,
